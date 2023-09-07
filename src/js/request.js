@@ -3,7 +3,7 @@ export default class Request {
   allTickets() {
     return new Promise((resolve, reject) => {
       const xhr = new XMLHttpRequest();
-      xhr.open('GET', 'https://http-helpdeskr-backend.herokuapp.com/?method=allTickets');
+      xhr.open('GET', 'https://AlexRemar.github.io/Homework-ahj-HTTP/?method=allTickets');
       // xhr.open('GET', 'http://localhost:7070/?method=allTickets');
       xhr.addEventListener('load', () => {
         if (xhr.status >= 200 && xhr.status < 300) {
@@ -24,7 +24,7 @@ export default class Request {
       const xhr = new XMLHttpRequest();
       const params = new URLSearchParams();
       params.append('id', id);
-      xhr.open('GET', `https://http-helpdeskr-backend.herokuapp.com/?method=ticketById&id=${id}`);
+      xhr.open('GET', `https://AlexRemar.github.io/Homework-ahj-HTTP/?method=ticketById&id=${id}`);
       // xhr.open('GET', `http://localhost:7070/?method=ticketById&id=${id}`);
       xhr.addEventListener('load', () => {
         if (xhr.status >= 200 && xhr.status < 300) {
@@ -46,7 +46,7 @@ export default class Request {
       params.append('name', name);
       params.append('description', description);
       const xhr = new XMLHttpRequest();
-      xhr.open('POST', 'https://http-helpdeskr-backend.herokuapp.com/?method=createTicket');
+      xhr.open('POST', 'https://AlexRemar.github.io/Homework-ahj-HTTP/?method=createTicket');
       // xhr.open('POST', 'http://localhost:7070/?method=createTicket');
       xhr.addEventListener('load', () => {
         if (xhr.status >= 200 && xhr.status < 300) {
@@ -67,7 +67,7 @@ export default class Request {
       const xhr = new XMLHttpRequest();
       const params = new URLSearchParams();
       params.append('id', id);
-      xhr.open('DELETE', `https://http-helpdeskr-backend.herokuapp.com/?method=removeById&id=${id}`);
+      xhr.open('DELETE', `https://AlexRemar.github.io/Homework-ahj-HTTP/?method=removeById&id=${id}`);
       // xhr.open('DELETE', `http://localhost:7070/?method=removeById&id=${id}`);
       xhr.addEventListener('load', () => {
         if (xhr.status >= 200 && xhr.status < 300) {
@@ -90,7 +90,7 @@ export default class Request {
       params.append('id', id);
       params.append('name', name);
       params.append('description', description);
-      xhr.open('POST', `https://http-helpdeskr-backend.herokuapp.com/?method=editTicket&id=${id}`);
+      xhr.open('POST', `https://AlexRemar.github.io/Homework-ahj-HTTP/?method=editTicket&id=${id}`);
       // xhr.open('POST', `http://localhost:7070/?method=editTicket&id=${id}`);
       xhr.addEventListener('load', () => {
         if (xhr.status >= 200 && xhr.status < 300) {
@@ -112,7 +112,7 @@ export default class Request {
       const params = new URLSearchParams();
       params.append('id', id);
       params.append('status', status);
-      xhr.open('POST', `https://http-helpdeskr-backend.herokuapp.com/?method=checkTicket&id=${id}`);
+      xhr.open('POST', `https://AlexRemar.github.io/Homework-ahj-HTTP/?method=checkTicket&id=${id}`);
       // xhr.open('POST', `http://localhost:7070/?method=checkTicket&id=${id}`);
       xhr.addEventListener('load', () => {
         if (xhr.status >= 200 && xhr.status < 300) {
